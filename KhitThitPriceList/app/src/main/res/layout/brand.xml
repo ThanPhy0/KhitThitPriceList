@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#121833"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btnInfo"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_gravity="right"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/circle_button"
+        android:padding="5dp"
+        android:textColor="#ffffffff"
+        android:textStyle="bold" />
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_marginTop="10dp"
+       android:orientation="vertical">
+
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="100dp"
+           android:layout_above="@+id/brandGrid"
+           android:background="@drawable/title_text_bg_shape"
+           android:layout_marginTop="15dp"
+           android:layout_marginLeft="15dp"
+           android:layout_marginRight="15dp"
+           android:padding="5dp"
+           android:layout_gravity="center"
+           android:orientation="horizontal">
+
+           <TextView
+               android:id="@+id/tvK"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="10dp"
+               android:layout_marginLeft="5dp"
+               android:paddingRight="10dp"
+               android:text="Khit Thit"
+               android:textStyle="bold"
+               android:textColor="#FC05CC9A"
+               android:shadowColor="#0B0A0A"
+               android:shadowDx="1.5"
+               android:shadowDy="2.5"
+               android:shadowRadius="8"
+               android:textSize="35sp"/>
+
+           <TextView
+               android:id="@+id/tvH"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginRight="5dp"
+               android:layout_marginBottom="6dp"
+               android:text="Spare part price list"
+               android:textStyle="bold"
+               android:textColor="#FFFFFF"
+               android:shadowColor="#ff000000"
+               android:shadowDx="1.5"
+               android:shadowDy="2.5"
+               android:shadowRadius="8"
+               android:layout_toRightOf="@+id/tvK"
+               android:layout_alignBottom="@+id/tvK"
+               android:textSize="18sp"/>
+
+
+       </RelativeLayout>
+
+       <View
+           android:layout_width="match_parent"
+           android:layout_height="1dp"
+           android:layout_marginTop="20dp"
+           android:layout_marginBottom="15dp"
+           android:layout_marginLeft="15dp"
+           android:layout_marginRight="15dp"
+           android:background="#939393"/>
+
+       <RelativeLayout
+           android:id="@+id/gridLayout"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal">
+
+           <GridView
+               android:id="@+id/brandGrid"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:gravity="top"
+               android:background="@drawable/title_text_bg_shape"
+               android:layout_margin="20dp"
+               android:paddingTop="15dp"
+               android:paddingLeft="5dp"
+               android:paddingRight="5dp"
+               android:horizontalSpacing="10.0dip"
+               android:verticalSpacing="10.0dip"
+               android:stretchMode="columnWidth"
+               android:columnWidth="150.0dip"
+               android:numColumns="auto_fit" />
+
+       </RelativeLayout>
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+
+           <TextView
+               android:id="@+id/undNotic"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginBottom="5dp"
+               android:layout_alignParentBottom="true"
+               android:ellipsize="marquee"
+               android:marqueeRepeatLimit="marquee_forever"
+               android:scrollHorizontally="true"
+               android:singleLine="true"
+               android:text=""
+               android:textSize="20sp"
+               android:textColor="#FFFFFF"
+               tools:ignore="UnknownId" />
+
+       </RelativeLayout>
+
+
+   </LinearLayout>
+</LinearLayout>

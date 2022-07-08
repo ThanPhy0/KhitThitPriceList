@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Khit Thit Price List</string>
+    <string-array name="type">
+        <item>Touch Only</item>
+        <item>LCD Only</item>
+        <item>Touch/Lcd</item>
+        <item>Battery</item>
+    </string-array>
+</resources>
